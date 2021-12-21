@@ -18,9 +18,7 @@ else
                 <th>Last Name</th>
                 <th>Hero Name</th>
                 <th>Comic</th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -32,13 +30,9 @@ else
                     <td>@hero.HeroName</td>
                     <td>@hero.Comic.Name</td>
                     <td>
-                        <button class="btn btn-primary" @onclick="(() => ShowHero(hero.Id))">Show</button>
-                    </td>
-                    <td>
+                        <button class="btn btn-success" @onclick="(() => ShowHero(hero.Id))">Show</button>
                         <button class="btn btn-primary" @onclick="(() => EditHero(hero.Id))">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary" @onclick="(() => DeleteHero(hero.Id))">Delete</button>
+                        <button class="btn btn-danger" @onclick="(() => DeleteHero(hero.Id))">Delete</button>
                     </td>
                 </tr>
             }
