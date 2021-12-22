@@ -48,3 +48,19 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+/* A BAIXO ESTÁ TODOS OS COMPONENTES DO MATBLAZOR ORGANIZADO POR PAGE-COMPONENT */
+
+/* SuperHeroes */
+
+#mat-icon-show {
+    color: mediumblue;
+}
+
+#mat-icon-edit {
+    color: deeppink;
+}
+
+#mat-icon-delete {
+    color: red;
+}

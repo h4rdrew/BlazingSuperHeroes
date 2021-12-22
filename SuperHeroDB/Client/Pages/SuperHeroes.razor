@@ -30,9 +30,18 @@ else
                     <td>@hero.HeroName</td>
                     <td>@hero.Comic.Name</td>
                     <td>
-                        <button class="btn btn-success" @onclick="(() => ShowHero(hero.Id))">Show</button>
-                        <button class="btn btn-primary" @onclick="(() => EditHero(hero.Id))">Edit</button>
-                        <button class="btn btn-danger" @onclick="(() => DeleteHero(hero.Id))">Delete</button>
+                        <MatIconButton Icon="remove_red_eye"
+                                       Id="mat-icon-show"
+                                       @onclick="(() => ShowHero(hero.Id))">
+                        </MatIconButton>
+                        <MatIconButton Icon="edit"
+                                       Id="mat-icon-edit"
+                                       @onclick="(() => EditHero(hero.Id))">
+                        </MatIconButton>
+                        <MatIconButton Icon="delete"
+                                       Id="mat-icon-delete"
+                                       @onclick="(() => DeleteHero(hero.Id))">
+                        </MatIconButton>
                     </td>
                 </tr>
             }
